@@ -1,0 +1,15 @@
+1.Nombre: Papas Fritas de Pollo;
+2;
+1;
+1;
+15/06/2020;
+31/12/2020;
+4;
+2.Descripcion;
+Descripción;
+3.Materiales;
+9$Papa Sabanera;1/1/2020;31/12/2020;0001;Descripción*Diametro maximo (cm);-1.0;5.0;15.0;
+4.Stage;
+12$Lavar Papa;XXXX;15/06/2020;15/06/2020;Descripción;1;1;1*Porcentaje de tierra;1.0;0.0;1.0;
+12$Pelar Papa;XXXX;15/06/2020;15/06/2020;Descripción;1;1;1*Porcentaje de cascara;1.0;0.0;1.0;
+12$Rayar Papa;XXXX;15/06/2020;15/06/2020;Descripción;1;1;1*Grosor de la papa en milimetros;1.0;0.5;1.0;

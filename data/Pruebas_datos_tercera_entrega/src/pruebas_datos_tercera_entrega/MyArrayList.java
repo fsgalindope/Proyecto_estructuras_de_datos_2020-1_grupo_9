@@ -1,4 +1,4 @@
-package Estructuras_de_datos;
+package pruebas_datos_tercera_entrega;
 
 import java.io.Serializable;
 
@@ -12,6 +12,21 @@ public class MyArrayList<T> implements Serializable {
         size = 0;
         listArray = (T[]) new Object[capacity];
     }
+
+    public int getCapacity() {
+        return capacity;
+    }
+
+    public void setCapacity(int capacity) {
+        this.capacity = capacity;
+    }
+    
+    public MyArrayList(int capacity) {
+        size = 0;
+        this.capacity=capacity;
+        listArray = (T[]) new Object[capacity];
+    }
+    
 
     public boolean empty() {
         return size <= 0;

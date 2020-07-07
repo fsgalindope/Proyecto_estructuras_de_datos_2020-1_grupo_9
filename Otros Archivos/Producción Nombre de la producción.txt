@@ -1,0 +1,17 @@
+		                        Nombre de la producción
+
+  ID: 3
+  Fecha de inicio: 10/06/2020 10:05:11    Fecha de finalización: 2/1/2021    Estado: En proceso
+  Descripción: Descripción
+
+    MATERIALES
+    1. Nombre del material    Lote: Lote    Fecha de compra: 1/1/2020    Fecha de vencimiento: 1/1/2021
+       Descripción: Descripción
+       Parametros del material 
+          1. Nombre de parametro    Valor: -1.0    Limite inferior: 0.0    Limite superior: 1.0
+
+    ETAPAS
+    1. Nombre del etapadsafsdggsdsdfsfsfddfs    Fecha de inicio: 10/06/2020 10:05:11    Fecha de finalización: 1/1/2021    Estado: En proceso
+       Descripción: Descripción
+       Parametros de la etapa 
+          1. wqdwqdwq    Valor: -1.0    Limite inferior: 0.0    Limite superior: 1.0

@@ -1,0 +1,15 @@
+1.Nombre: Queso ;
+4;
+1;
+1;
+15/06/2020;
+1/1/2020;
+4;
+2.Descripcion;
+Descripción;
+3.Materiales;
+9$leche;1/1/2020;1/2/2021;123;Descripción*Nombre de parametro;-1.0;1.0;1.0;
+4.Stage;
+16$Ordeñar vaca;.;15/06/2020;15/06/2020;Descripción;1;1;1*Porcentaje de elementos externos;3.0;0.0;4.0*Nivel de cuajado  en procentaje;45.0;40.0;50.0;
+16$Limpiar Leche;.;15/06/2020;15/06/2020;Descripción;1;1;1*Porcentaje de elementos externos;4.0;0.0;4.0*Nivel de cuajado  en procentaje;45.0;40.0;50.0;
+16$Convertir en queso;.;15/06/2020;15/06/2020;Descripción;1;1;1*Porcentaje de elementos externos;4.0;0.0;4.0*Nivel de cuajado  en procentaje;45.0;40.0;50.0;

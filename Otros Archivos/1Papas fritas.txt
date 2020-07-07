@@ -1,0 +1,13 @@
+1.Nombre: Papas fritas;
+1;
+0;
+0;
+No iniciado;
+1/11/2020;
+0;
+2.Descripcion;
+Descripción;
+3.Materiales;
+9$Papa sabanera;1/1/2020;2/1/2021;0002;Descripción*Diametro maximo en centimetros;-1.0;5.0;15.0;
+4.Stage;
+12$Lavar Papas;XXXX;1/6/2020;2/6/2020;Descripción;1;0;0*Porcentaje de cascara en la papa;-1.0;0.0;1.0;

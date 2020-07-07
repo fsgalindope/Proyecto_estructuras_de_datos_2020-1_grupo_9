@@ -1,4 +1,4 @@
-package data;
+package pruebas_datos_tercera_entrega;
 
 import java.io.Serializable;
 

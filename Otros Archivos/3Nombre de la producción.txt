@@ -1,0 +1,13 @@
+1.Nombre: Nombre de la producción;
+3;
+1;
+0;
+10/06/2020 10:05:11;
+2/1/2021;
+1;
+2.Descripcion;
+Descripción;
+3.Materiales;
+9$Nombre del material;1/1/2020;1/1/2021;Lote;Descripción*Nombre de parametro;-1.0;0.0;1.0;
+4.Stage;
+12$Nombre del etapadsafsdggsdsdfsfsfddfs;XXXX;10/06/2020 10:05:11;1/1/2021;Descripción;1;1;0*wqdwqdwq;-1.0;0.0;1.0;

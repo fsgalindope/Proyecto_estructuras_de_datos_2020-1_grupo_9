@@ -1,8 +1,8 @@
-package Estructuras_de_datos;
+package pruebas_datos_tercera_entrega;
 
 import java.io.Serializable;
 
-public class SinglyLinkedList<T> implements Serializable {
+        public class SinglyLinkedList<T> implements Serializable {
 
     private SingleNode<T> head;
     private SingleNode<T> tail;

@@ -12,10 +12,13 @@ public class DataBase implements Serializable {
 
     public static MyArrayList<Production> myArrayListProduction = new MyArrayList<Production>(); // guarda la lista de producciones
     public static SinglyLinkedList<String> sLnameP = new SinglyLinkedList<String>();// carga los nombres de las producciones para luego buscarlas
-
-    public static SinglyLinkedList<User> singlyLinkedListUser = new SinglyLinkedList<User>();
+     public static AvlNodeTree<Production> prodTree = new AvlNodeTree<>();
+    
+    private static SinglyLinkedList<User> singlyLinkedListUser;
     public static SinglyLinkedList<String> sLnameU = new SinglyLinkedList<String>();
 
+    public static MyHashTable<User> hashTableUser=new  MyHashTable<User>();
+    
     public static MyArrayList<RawMaterial> myArrayListMaterial;
     public static MyArrayList<Stage> myArrayListStage;
 
@@ -29,6 +32,16 @@ public class DataBase implements Serializable {
                 CreateArchive("Informe", true);
             }
             
+            singlyLinkedListUser = new SinglyLinkedList<User>();
+            
+                for (int i = 0; i < hashTableUser.getTheLists().getSize(); i++) {
+                    SinglyLinkedList<User> user= hashTableUser.getTheLists().getItem(i);
+                    for (int j = 0; j < user.getSize(); j++) {
+                        singlyLinkedListUser.pushBack(user.getItem(j));
+                        
+                    }
+                }
+               
             for (int i = 0; i < singlyLinkedListUser.getSize(); i++) {
                 Write("Usuarios", "Usuarios", i);
             }
@@ -69,7 +82,7 @@ public class DataBase implements Serializable {
         if (file.delete()) {
             System.out.println("El archivo" + nameA + "ha sido borrado satisfactoriamente");
         } else {
-            System.out.println("El archivo" + nameA + "no puedo ser borrado satisfactoriamente");
+          //  System.out.println("El archivo" + nameA + "no puedo ser borrado satisfactoriamente");
         }
         
         
@@ -345,7 +358,7 @@ public class DataBase implements Serializable {
                     parameter = new Parameter(load[5 + a], Double.parseDouble(load[6 + a]), Double.parseDouble(load[7 + a]), Double.parseDouble(load[8 + a]));
                     a = a + 4;
                     parametrosCalidad.pushBack(parameter);
-
+                    
                 }
                 rawMaterial = new RawMaterial(load[0], load[1], load[2], load[3], load[4], parametrosCalidad);
                 myArrayListMaterial.pushBack(rawMaterial);
@@ -414,6 +427,7 @@ public class DataBase implements Serializable {
             production.setCurrentStage(Integer.valueOf(num));
             production.setId(ID);
             myArrayListProduction.pushBack(production);
+            prodTree.insert(production);
             os.close();
             return true;
         } else if (tip.equals("Usuarios")) {
@@ -449,7 +463,7 @@ public class DataBase implements Serializable {
                 ad = false;
             }
             user = new User(load[2], Integer.valueOf(load[1]), load[0], load[3], ad);
-            singlyLinkedListUser.pushBack(user);
+            hashTableUser.Add(user);
             return true;
         }
         return false;

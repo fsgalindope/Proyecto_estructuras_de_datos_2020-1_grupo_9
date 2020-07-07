@@ -13,6 +13,21 @@ public class MyArrayList<T> implements Serializable {
         listArray = (T[]) new Object[capacity];
     }
 
+    public int getCapacity() {
+        return capacity;
+    }
+
+    public void setCapacity(int capacity) {
+        this.capacity = capacity;
+    }
+    
+    public MyArrayList(int capacity) {
+        size = 0;
+        this.capacity=capacity;
+        listArray = (T[]) new Object[capacity];
+    }
+    
+
     public boolean empty() {
         return size <= 0;
     }

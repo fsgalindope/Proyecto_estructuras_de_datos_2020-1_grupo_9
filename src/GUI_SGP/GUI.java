@@ -34,7 +34,8 @@ public class GUI extends javax.swing.JFrame {
              jpSetParametr.setVisible(false);
         Menu.repaint();
         Menu.revalidate();
-             
+        
+        
         Main.setVisible(true); 
               
               jpNewUser.setVisible(false);    
@@ -43,7 +44,8 @@ public class GUI extends javax.swing.JFrame {
 //            jpSignIn.setVisible(true);    
         Main.repaint();
         Main.revalidate();
-
+       
+        
     }
 
     @SuppressWarnings("unchecked")
@@ -55,11 +57,6 @@ public class GUI extends javax.swing.JFrame {
         jpCM2 = new javax.swing.JPanel();
         jlClose1 = new javax.swing.JLabel();
         jlMinimize1 = new javax.swing.JLabel();
-        jpInfo = new javax.swing.JPanel();
-        infoTitle1 = new javax.swing.JLabel();
-        imageLabel1 = new javax.swing.JLabel();
-        infoText3 = new javax.swing.JLabel();
-        infoText4 = new javax.swing.JLabel();
         jpSignIn = new javax.swing.JPanel();
         signInTitle = new javax.swing.JLabel();
         jSeparator1 = new javax.swing.JSeparator();
@@ -70,6 +67,11 @@ public class GUI extends javax.swing.JFrame {
         signInButton = new javax.swing.JButton();
         registerLabel = new javax.swing.JLabel();
         registerButton = new javax.swing.JButton();
+        jpInfo = new javax.swing.JPanel();
+        infoTitle1 = new javax.swing.JLabel();
+        imageLabel1 = new javax.swing.JLabel();
+        infoText3 = new javax.swing.JLabel();
+        infoText4 = new javax.swing.JLabel();
         jpNewUser = new javax.swing.JPanel();
         jTextR4 = new javax.swing.JTextField();
         jTextR3 = new javax.swing.JPasswordField();
@@ -160,7 +162,6 @@ public class GUI extends javax.swing.JFrame {
         jLabel11 = new javax.swing.JLabel();
         IDP = new javax.swing.JLabel();
         addingPanel1 = new javax.swing.JPanel();
-        addMaterialButton1 = new javax.swing.JButton();
         jScrollPane8 = new javax.swing.JScrollPane();
         materialL = new javax.swing.JList<>();
         jScrollPane9 = new javax.swing.JScrollPane();
@@ -170,6 +171,7 @@ public class GUI extends javax.swing.JFrame {
         addStageButton2 = new javax.swing.JButton();
         jLabel17 = new javax.swing.JLabel();
         addStageButton3 = new javax.swing.JButton();
+        addMaterialButton1 = new javax.swing.JButton();
         doneButton = new javax.swing.JButton();
         addMaterialButton12 = new javax.swing.JButton();
         jpRegister = new javax.swing.JPanel();
@@ -370,36 +372,6 @@ public class GUI extends javax.swing.JFrame {
 
         Main.add(jpCM2, new org.netbeans.lib.awtextra.AbsoluteConstraints(970, 0, 50, 30));
 
-        jpInfo.setBackground(new java.awt.Color(0, 56, 142));
-        jpInfo.setMaximumSize(new java.awt.Dimension(472, 541));
-        jpInfo.setMinimumSize(new java.awt.Dimension(472, 541));
-        jpInfo.setName(""); // NOI18N
-        jpInfo.setRequestFocusEnabled(false);
-        jpInfo.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-
-        infoTitle1.setFont(new java.awt.Font("Segoe UI", 1, 36)); // NOI18N
-        infoTitle1.setForeground(new java.awt.Color(255, 255, 255));
-        infoTitle1.setText("Bienvenid@ a SGP");
-        jpInfo.add(infoTitle1, new org.netbeans.lib.awtextra.AbsoluteConstraints(83, 64, -1, -1));
-
-        imageLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/estrategia.png"))); // NOI18N
-        imageLabel1.setToolTipText("");
-        imageLabel1.setDebugGraphicsOptions(javax.swing.DebugGraphics.BUFFERED_OPTION);
-        imageLabel1.setDoubleBuffered(true);
-        jpInfo.add(imageLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(117, 146, -1, -1));
-
-        infoText3.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        infoText3.setForeground(new java.awt.Color(255, 255, 255));
-        infoText3.setText("Está a un paso de gestionar toda su producción");
-        jpInfo.add(infoText3, new org.netbeans.lib.awtextra.AbsoluteConstraints(83, 435, -1, -1));
-
-        infoText4.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        infoText4.setForeground(new java.awt.Color(255, 255, 255));
-        infoText4.setText("con los mejores estándares de calidad.");
-        jpInfo.add(infoText4, new org.netbeans.lib.awtextra.AbsoluteConstraints(83, 455, -1, -1));
-
-        Main.add(jpInfo, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 472, 541));
-
         jpSignIn.setBackground(new java.awt.Color(28, 28, 28));
         jpSignIn.setFont(new java.awt.Font("Segoe UI", 0, 12)); // NOI18N
         jpSignIn.setMaximumSize(new java.awt.Dimension(552, 541));
@@ -475,7 +447,37 @@ public class GUI extends javax.swing.JFrame {
         });
         jpSignIn.add(registerButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(188, 433, 195, 33));
 
-        Main.add(jpSignIn, new org.netbeans.lib.awtextra.AbsoluteConstraints(472, 0, 552, 541));
+        Main.add(jpSignIn, new org.netbeans.lib.awtextra.AbsoluteConstraints(472, 0, -1, -1));
+
+        jpInfo.setBackground(new java.awt.Color(0, 56, 142));
+        jpInfo.setMaximumSize(new java.awt.Dimension(472, 541));
+        jpInfo.setMinimumSize(new java.awt.Dimension(472, 541));
+        jpInfo.setName(""); // NOI18N
+        jpInfo.setRequestFocusEnabled(false);
+        jpInfo.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        infoTitle1.setFont(new java.awt.Font("Segoe UI", 1, 36)); // NOI18N
+        infoTitle1.setForeground(new java.awt.Color(255, 255, 255));
+        infoTitle1.setText("Bienvenid@ a SGP");
+        jpInfo.add(infoTitle1, new org.netbeans.lib.awtextra.AbsoluteConstraints(83, 64, -1, -1));
+
+        imageLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/estrategia.png"))); // NOI18N
+        imageLabel1.setToolTipText("");
+        imageLabel1.setDebugGraphicsOptions(javax.swing.DebugGraphics.BUFFERED_OPTION);
+        imageLabel1.setDoubleBuffered(true);
+        jpInfo.add(imageLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(117, 146, -1, -1));
+
+        infoText3.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        infoText3.setForeground(new java.awt.Color(255, 255, 255));
+        infoText3.setText("Está a un paso de gestionar toda su producción");
+        jpInfo.add(infoText3, new org.netbeans.lib.awtextra.AbsoluteConstraints(83, 435, -1, -1));
+
+        infoText4.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        infoText4.setForeground(new java.awt.Color(255, 255, 255));
+        infoText4.setText("con los mejores estándares de calidad.");
+        jpInfo.add(infoText4, new org.netbeans.lib.awtextra.AbsoluteConstraints(83, 455, -1, -1));
+
+        Main.add(jpInfo, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 472, 541));
 
         jpNewUser.setBackground(new java.awt.Color(28, 28, 28));
         jpNewUser.setFont(new java.awt.Font("Segoe UI", 0, 12)); // NOI18N
@@ -975,7 +977,7 @@ public class GUI extends javax.swing.JFrame {
         jTextIDU.setBackground(new java.awt.Color(48, 48, 48));
         jTextIDU.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         jTextIDU.setForeground(new java.awt.Color(204, 204, 204));
-        jTextIDU.setText("ID");
+        jTextIDU.setText("Usuario");
         jTextIDU.setBorder(javax.swing.BorderFactory.createEmptyBorder(2, 5, 2, 5));
         jTextIDU.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -1148,6 +1150,11 @@ public class GUI extends javax.swing.JFrame {
                 jTextCp1ActionPerformed(evt);
             }
         });
+        jTextCp1.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                jTextCp1KeyTyped(evt);
+            }
+        });
 
         jTextCp5.setBackground(new java.awt.Color(48, 48, 48));
         jTextCp5.setColumns(20);
@@ -1230,17 +1237,6 @@ public class GUI extends javax.swing.JFrame {
 
         addingPanel1.setBackground(new java.awt.Color(28, 28, 28));
 
-        addMaterialButton1.setBackground(new java.awt.Color(65, 69, 71));
-        addMaterialButton1.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        addMaterialButton1.setForeground(new java.awt.Color(204, 204, 204));
-        addMaterialButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/agregar_azul.png"))); // NOI18N
-        addMaterialButton1.setBorder(null);
-        addMaterialButton1.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                addMaterialButton1MouseClicked(evt);
-            }
-        });
-
         materialL.setBackground(new java.awt.Color(48, 48, 48));
         materialL.setFont(new java.awt.Font("Segoe UI", 0, 12)); // NOI18N
         materialL.setForeground(new java.awt.Color(204, 204, 204));
@@ -1294,6 +1290,17 @@ public class GUI extends javax.swing.JFrame {
             }
         });
 
+        addMaterialButton1.setBackground(new java.awt.Color(65, 69, 71));
+        addMaterialButton1.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        addMaterialButton1.setForeground(new java.awt.Color(204, 204, 204));
+        addMaterialButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/agregar_azul.png"))); // NOI18N
+        addMaterialButton1.setBorder(null);
+        addMaterialButton1.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                addMaterialButton1MouseClicked(evt);
+            }
+        });
+
         javax.swing.GroupLayout addingPanel1Layout = new javax.swing.GroupLayout(addingPanel1);
         addingPanel1.setLayout(addingPanel1Layout);
         addingPanel1Layout.setHorizontalGroup(
@@ -1315,8 +1322,8 @@ public class GUI extends javax.swing.JFrame {
                     .addGroup(addingPanel1Layout.createSequentialGroup()
                         .addComponent(jLabel17)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(addMaterialButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(addMaterialButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(addStageButton3, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(40, 40, 40))))
         );
@@ -1326,8 +1333,10 @@ public class GUI extends javax.swing.JFrame {
                 .addContainerGap()
                 .addGroup(addingPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jLabel17, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(addMaterialButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(addStageButton3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addComponent(addStageButton3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addGroup(addingPanel1Layout.createSequentialGroup()
+                        .addGap(0, 0, Short.MAX_VALUE)
+                        .addComponent(addMaterialButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jScrollPane8, javax.swing.GroupLayout.PREFERRED_SIZE, 74, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
@@ -1579,6 +1588,11 @@ public class GUI extends javax.swing.JFrame {
         jTextSp1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jTextSp1ActionPerformed(evt);
+            }
+        });
+        jTextSp1.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                jTextSp1KeyTyped(evt);
             }
         });
         jpSearchP.add(jTextSp1, new org.netbeans.lib.awtextra.AbsoluteConstraints(103, 136, 259, 34));
@@ -2427,23 +2441,23 @@ public class GUI extends javax.swing.JFrame {
 
         createLabel22.setFont(new java.awt.Font("Segoe UI", 0, 16)); // NOI18N
         createLabel22.setForeground(new java.awt.Color(202, 202, 202));
-        createLabel22.setText("LO:");
-        jpSetParametr.add(createLabel22, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 330, 40, 30));
+        createLabel22.setText("LImite superior:");
+        jpSetParametr.add(createLabel22, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 330, 110, 30));
 
         createLabel26.setFont(new java.awt.Font("Segoe UI", 0, 16)); // NOI18N
         createLabel26.setForeground(new java.awt.Color(202, 202, 202));
         createLabel26.setText("lo");
-        jpSetParametr.add(createLabel26, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 330, 70, 30));
+        jpSetParametr.add(createLabel26, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 330, 70, 30));
 
         createLabel27.setFont(new java.awt.Font("Segoe UI", 0, 16)); // NOI18N
         createLabel27.setForeground(new java.awt.Color(202, 202, 202));
-        createLabel27.setText("LI:");
-        jpSetParametr.add(createLabel27, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 300, 40, 30));
+        createLabel27.setText("Limite inferior:");
+        jpSetParametr.add(createLabel27, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 300, 110, 30));
 
         createLabel28.setFont(new java.awt.Font("Segoe UI", 0, 16)); // NOI18N
         createLabel28.setForeground(new java.awt.Color(202, 202, 202));
         createLabel28.setText("li");
-        jpSetParametr.add(createLabel28, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 300, 70, 30));
+        jpSetParametr.add(createLabel28, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 300, 70, 30));
 
         Menu.add(jpSetParametr, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 110, 1024, 431));
 
@@ -2529,19 +2543,19 @@ public class GUI extends javax.swing.JFrame {
     private void signInButtonMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_signInButtonMouseClicked
         Boolean correct=false;
         try{
-            
-        for(int i=0; i<singlyLinkedListUser.getSize(); i++){
-                if (singlyLinkedListUser.getItem(i).getUser().equals(jTextL1.getText())){
-                   if (singlyLinkedListUser.getItem(i).getPassword().equals(jTextL2.getText())){  
-                   correct=true;
-                   indexLA=i;
-                   adm=singlyLinkedListUser.getItem(i).getAdm();
-                   userLabel1.setText(singlyLinkedListUser.getItem(i).getUser());
-                   idLabel.setText("ID: "+String.valueOf(singlyLinkedListUser.getItem(i).getId()));
-                   break;
-                     }
-                }
-           }
+         User singIn =new User();
+            singIn.setUser(jTextL1.getText()); 
+            singIn=hashTableUser.Get(singIn);
+         if(singIn!=null){
+                if(singIn.getPassword().equals(jTextL2.getText())){
+                 correct=true;
+                 userSingIn=singIn;
+                 adm=singIn.getAdm();
+                  userLabel1.setText(singIn.getUser());
+                  idLabel.setText("ID: "+String.valueOf(singIn.getId()));
+             } 
+         }
+       
         if(correct){
             if(adm){
                 
@@ -2767,15 +2781,15 @@ public class GUI extends javax.swing.JFrame {
         
         
         if(myArrayListProduction.getSize()>0){
-            AvlNodeTree<Production> prodTree = new AvlNodeTree<>();            
+            //AvlNodeTree<Production> prodTree = new AvlNodeTree<>();            
             ProductionSearchList.removeAll();
             String [] namep= new  String[myArrayListProduction.getSize()];
             
-           
-            for(int i=0; i<myArrayListProduction.getSize(); i++){
-                //namep[i]=myArrayListProduction.getItem(i).getName();  
-                prodTree.insert(myArrayListProduction.getItem(i));
-            }
+//           
+//            for(int i=0; i<myArrayListProduction.getSize(); i++){
+//                //namep[i]=myArrayListProduction.getItem(i).getName();  
+//                prodTree.insert(myArrayListProduction.getItem(i));
+//            }
             
             MyArrayList<Production> treeList = prodTree.inOrderList();
             
@@ -2826,18 +2840,13 @@ public class GUI extends javax.swing.JFrame {
                    JOptionPane.showMessageDialog(this,"Valor no valido para ID.");
                    correct=false;
                }
-           for(int i=0; i<singlyLinkedListUser.getSize(); i++){
-                if (singlyLinkedListUser.getItem(i).getUser().equals(jTextR2.getText())){
-                   JOptionPane.showMessageDialog(this,"El usuario ya existe.");
+           
+           user.setUser(jTextR2.getText());
+           if (hashTableUser.Find(user)){
+               JOptionPane.showMessageDialog(this,"El usuario ya existe.");
                    correct=false; 
-                   break;
-                }
-                if (singlyLinkedListUser.getItem(i).getId()==Integer.parseInt (jTextR4.getText())){
-                   JOptionPane.showMessageDialog(this,"El ID ya existe.");
-                   correct=false; 
-                   break;
-                }
            }
+           
            if(AdmC && correct){
                 if (jTextR5.getText().equals("soyadm")){
                    user = new User(jTextR1.getText(),Integer.parseInt (jTextR4.getText()),jTextR2.getText(),jTextR3.getText(),AdmC);
@@ -2856,7 +2865,7 @@ public class GUI extends javax.swing.JFrame {
            int result = JOptionPane.showConfirmDialog(null, "¿Desea guardar los datos?","Guardar",dialog);
            
                 if(result==0){
-                    singlyLinkedListUser.pushBack(user);
+                    hashTableUser.Add(user);
                 }
                 
                 jTextR1.setText("Nombre");
@@ -3018,6 +3027,12 @@ public class GUI extends javax.swing.JFrame {
                correct=false;
                JOptionPane.showMessageDialog(this,"Antes de guardar, debe agregar materiales y etapas a la producción.");
              }
+             for(int i=0; i<myArrayListProduction.getSize(); i++){
+                if(myArrayListProduction.getItem(i).getName().equals(jTextCp1.getText())){
+                  correct=false;
+                    JOptionPane.showMessageDialog(this,"Ya existe una producción con este nombre.");
+                }
+            }
            if(correct){
                int dialog = JOptionPane.YES_NO_OPTION;
            int result = JOptionPane.showConfirmDialog(null, "¿Desea guardar los datos?","Guardar la producción",dialog);
@@ -3027,16 +3042,29 @@ public class GUI extends javax.swing.JFrame {
             production.setEndDate(Integer.parseInt(jTextCp2.getSelectedItem().toString())+"/"+Integer.parseInt(convertMonth(jTextCp3.getSelectedItem().toString()))+"/"+Integer.parseInt(jTextCp4.getSelectedItem().toString()));
             production.setIsActive(false);
             production.setIsFinished(false);
-           
-            production.setId(IDP.getText());
+           //
+           int hashVal=0;
+             
+               for( int i = 0; i < production.getName().length( ); i++ ){
+                   hashVal = 37 * hashVal + production.getName().charAt(production.getName().length()-i-1);
+               }
+                   
+            
+//            for(int i=0; i<myArrayListProduction.getSize(); i++){
+//                if(myArrayListProduction.getItem(i).getId()==(id1)){
+//                    id1=String.valueOf(myArrayListProduction.getItem(i).getId()+1);
+//                }
+//            }
+
+            hashVal%=101;
+            String id1=String.valueOf(hashVal);
+           //
+            production.setId(production.getName());
             myArrayListProduction.pushBack(production);
-             String id1=String.valueOf(myArrayListProduction.getSize());
-            for(int i=0; i<myArrayListProduction.getSize(); i++){
-                if(myArrayListProduction.getItem(i).getId().equals(id1)){
-                    id1=String.valueOf(i+myArrayListProduction.getSize());
-                }
-            }
-            IDP.setText(id1);  
+            prodTree.insert(production);
+            // String id1=String.valueOf(myArrayListProduction.getSize());
+             
+            IDP.setText("-");  
             cleanCreateP();
             
            }
@@ -3674,12 +3702,18 @@ private static int indexCr=1;
        }
     }//GEN-LAST:event_jlNextCrMouseClicked
     public void printProduction(int index){
-       
+      
         try{
             if(sLIDP.getSize()>0){
                 if(sLIDP.getSize()>=index){
                    Production production;
-                   production=myArrayListProduction.getItem(sLIDP.getItem(index-1));
+                   if(index>0){
+                     production=myArrayListProduction.getItem(sLIDP.getItem(index-1));  
+                   }else{
+                       production=treeList.getItem(sLIDP.getItem(index+1));  
+                   }
+                   
+                   
                    String e;
                    if(production.isIsActive()){
                         if(production.isFinished()){
@@ -3888,7 +3922,7 @@ private static int indexCr=1;
         
         try{
             sLIDP2 = new SinglyLinkedList<>();
-            if(jTextSp1.getText().equalsIgnoreCase("Nombre de la producción") && myArrayListProduction.getSize()>0){
+            if((jTextSp1.getText().equalsIgnoreCase("Nombre de la producción") || jTextSp1.getText().isBlank()) && myArrayListProduction.getSize()>0){
                 ProductionLSp.removeAll();
                 String [] namep= new  String[5];
                 for(int i=0; i<myArrayListProduction.getSize(); i++){
@@ -4939,13 +4973,33 @@ private static int indexCr=1;
 
     private void formWindowOpened(java.awt.event.WindowEvent evt) {//GEN-FIRST:event_formWindowOpened
     DataBase.loadArchive();  
-    String id1=String.valueOf(myArrayListProduction.getSize());
-            for(int i=0; i<myArrayListProduction.getSize(); i++){
-                if(myArrayListProduction.getItem(i).getId().equals(id1)){
-                    id1=String.valueOf(i+myArrayListProduction.getSize());
-                }
-            }
-    IDP.setText(id1);  
+//    String id1=String.valueOf(myArrayListProduction.getSize());
+//            for(int i=0; i<myArrayListProduction.getSize(); i++){
+//                if(myArrayListProduction.getItem(i).getId().equals(id1)){
+//                    id1=String.valueOf(myArrayListProduction.getItem(i).getId()+1);
+//                }
+//            }
+//    IDP.setText(id1);  
+    
+//    int hashVal=0;
+//            if(myArrayListProduction.getSize()>0){
+//                Production production = myArrayListProduction.getItem(myArrayListProduction.getSize()-1);
+//               for( int i = 0; i < production.getName().length( ); i++ ){
+//                   hashVal = 37 * hashVal + production.getName().charAt(production.getName().length()-i-1);
+//               }
+                   
+            
+//            for(int i=0; i<myArrayListProduction.getSize(); i++){
+//                if(myArrayListProduction.getItem(i).getId()==(id1)){
+//                    id1=String.valueOf(myArrayListProduction.getItem(i).getId()+1);
+//                }
+//            }
+
+//            hashVal%=101;
+//            String id1=String.valueOf(hashVal);
+            IDP.setText("-"); 
+//            }
+             
 // TODO add your handling code here:
     }//GEN-LAST:event_formWindowOpened
 
@@ -4957,47 +5011,49 @@ private static int indexCr=1;
         // TODO add your handling code here:
     }//GEN-LAST:event_jTextIDUActionPerformed
 
-    private static int removeU=-1;
+    private static User removeU;
     private void searchPjLabel2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_searchPjLabel2MouseClicked
       Boolean correct=true;
       Boolean find=false;
         try{
-          try{
-              if(jTextIDU.getText().equals("ID")){
+         
+              if(jTextIDU.getText().equals("Usuario")){
                   correct=false;
-                  UserL.removeAll();
-                   String [] namep= new  String[singlyLinkedListUser.getSize()];
-                  for(int i=0; i<singlyLinkedListUser.getSize(); i++){
-                   namep[i]=String.valueOf(singlyLinkedListUser.getItem(i).getId());
-                 }
-                  UserL.setListData(namep);
-                   removeU=-1;
-              }else{
-                   Integer.valueOf(jTextIDU.getText());
-              }
-          }catch(Exception e){
-              correct=false;
-              JOptionPane.showMessageDialog(this,"Valor no valido para ID."); 
-              
-          }
-          if(correct){
-              for(int i=0; i<singlyLinkedListUser.getSize(); i++){
-              if(Integer.valueOf(jTextIDU.getText())==singlyLinkedListUser.getItem(i).getId()){
-                  find=true;
-                    UserL.removeAll();
-                    removeU=i;
-                   String [] namep= new  String[1];
-                   namep[0]=String.valueOf(singlyLinkedListUser.getItem(i).getId());
-                  UserL.setListData(namep);
-                  jTextIDU.setText("ID");
-                  break;
+                  int k=0;
+                UserL.removeAll();
+                String [] namep= new  String[hashTableUser.getCurrentSize()];
+                for (int i = 0; i < hashTableUser.getTheLists().getSize(); i++) {
+                    SinglyLinkedList<User> user= hashTableUser.getTheLists().getItem(i);
+                    for (int j = 0; j < user.getSize(); j++) {
+                        namep[k]=user.getItem(j).getUser();
+                        k++;
+                    }
                 }
-             }
-             if(!find){
-                    JOptionPane.showMessageDialog(this,"No se ha encontrado usuarios con este ID: "+jTextIDU.getText());   
+                UserL.setListData(namep);
+                   removeU=null;
               }
+         User userS=new User();
+         userS.setUser(jTextIDU.getText());
+         userS=hashTableUser.Get(userS);
+          if(userS!=null){
+              
+                  find=true;
+                  removeU=userS;
+                  
+                  UserL.removeAll();                    
+                  String [] namep= new  String[1];
+                  namep[0]=String.valueOf(userS.getUser());
+                  UserL.setListData(namep);
+                  
+                  jTextIDU.setText("Usuario");
+               
+          }else{
+              if(!jTextIDU.getText().equals("Usuario")){
+                  JOptionPane.showMessageDialog(this,"No se ha encontrado usuarios con este nombre de usuario: "+jTextIDU.getText());    
+              }
+            
           }
-          jTextIDU.setText("ID");
+          jTextIDU.setText("Usuario");
       }catch(Exception e){
            JOptionPane.showMessageDialog(this,"Ha ocurrido un error, por favor contacte con el administrador."); 
       }
@@ -5059,12 +5115,23 @@ private static int indexCr=1;
                 }
                 int result = JOptionPane.showConfirmDialog(null, "¿Esta seguro que desea eliminar la producción: "+myArrayListProduction.getItem(selected2).getName()+"?","Eliminar producción",dialog);
                       if(result==0){
-                          
-                          if (sLnameP.isListed(myArrayListProduction.getItem(selected2).getName())){
+                          try{
                               DataBase.eliminar(myArrayListProduction.getItem(selected2).getId()+myArrayListProduction.getItem(selected2).getName(), "Producción");
+                          }catch(Exception e){
+                               System.out.println("Entro2eliminar");
                           }
                           
+                              
+//                              for(int i=0; i<sLnameP.getSize(); i++){
+//                                      if (sLnameP.getItem(i).compareTo(myArrayListProduction.getItem(selected2).getName())==0){
+//                                         System.out.println("Entro2eliminar");
+//                                         DataBase.eliminar(myArrayListProduction.getItem(selected2).getId()+myArrayListProduction.getItem(selected2).getName(), "Producción");
+//                                     }
+//                                 }
+                          
+                          prodTree.remove(myArrayListProduction.getItem(selected2));
                           myArrayListProduction.removeIndex(selected2);
+                         
                            ProductionL.removeAll();
                              String [] namep= new  String[myArrayListProduction.getSize()];
                              
@@ -5095,19 +5162,24 @@ private static int indexCr=1;
              jTextPu4.setText("Contraseña");
              jTextPu5.setText("Contraseña");
              jTextPu6.setText("Contraseña");
-             jTextIDU.setText("ID");
+             jTextIDU.setText("Usuario");
              jTextIDP.setText("ID");
              
-             removeU=-1;
-             indexLA2=-1;
+             removeU=null;
+             indexLA2=null;
              removeP=-1;
              
-             UserL.removeAll();
-             String [] namep= new  String[singlyLinkedListUser.getSize()];
-              for(int i=0; i<singlyLinkedListUser.getSize(); i++){
-                          namep[i]=String.valueOf(singlyLinkedListUser.getItem(i).getId());
-               }
-             UserL.setListData(namep);
+              int k=0;
+                UserL.removeAll();
+                String [] namep= new  String[hashTableUser.getCurrentSize()];
+                for (int i = 0; i < hashTableUser.getTheLists().getSize(); i++) {
+                    SinglyLinkedList<User> user= hashTableUser.getTheLists().getItem(i);
+                    for (int j = 0; j < user.getSize(); j++) {
+                        namep[k]=user.getItem(j).getUser();
+                        k++;
+                    }
+                }
+                UserL.setListData(namep);
              
               ProductionL.removeAll();
                 String [] namep2= new  String[myArrayListProduction.getSize()];
@@ -5122,22 +5194,21 @@ private static int indexCr=1;
      }
     
     
-    private static int indexLA2=-1;
+    private static User indexLA2=null;
     private void doneButton3MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_doneButton3MouseClicked
        try {
-           if(indexLA2!=-1){
-           if(jTextPu4.getText().equals(singlyLinkedListUser.getItem(indexLA2).getPassword())){
+           if(indexLA2!=null){
+           if(jTextPu4.getText().equals(indexLA2.getPassword())){
                JOptionPane.showMessageDialog(this,"La nueva contraseña debe ser diferente a su contraseña actual");  
              }else{
-                 if(jTextPu6.getText().equals(singlyLinkedListUser.getItem(indexLA2).getPassword())){
+                 if(jTextPu6.getText().equals(indexLA2.getPassword())){
                     if(jTextPu4.getText().equals(jTextPu5.getText())){
                   
                     int dialog = JOptionPane.YES_NO_OPTION;
                     int result = JOptionPane.showConfirmDialog(null, "¿Desea guardar los datos?","Guardar contraseña",dialog);
                       if(result==0){
-                          System.out.println(jTextPu4.getText());
-                          singlyLinkedListUser.getItem(indexLA2).setPassword(jTextPu4.getText());
-                          System.out.println(singlyLinkedListUser.getItem(indexLA2).getPassword());
+                         
+                          indexLA2.setPassword(jTextPu4.getText());
                           JOptionPane.showMessageDialog(this,"Su contraseña se ha cambiado con exito.");  
                           jTextPu4.setText("Contraseña");
                           jTextPu5.setText("Contraseña");
@@ -5160,44 +5231,63 @@ private static int indexCr=1;
     private void doneButton4MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_doneButton4MouseClicked
      try{
          int selected =UserL.getSelectedIndex();
-             if(selected!=-1 && singlyLinkedListUser.getSize()>0){
+             if(selected!=-1 && hashTableUser.getCurrentSize()>0){
                 int dialog = JOptionPane.YES_NO_OPTION;
                 int result;
                  
-                       if(selected==0 && removeU!=-1){
-                           if(singlyLinkedListUser.getItem(removeU).getUser().equals(singlyLinkedListUser.getItem(indexLA).getUser())){
+                       if(selected==0 && removeU!=null){
+                           if(removeU.getUser().equals(userSingIn.getUser())){
                             JOptionPane.showMessageDialog(this,"No es posible eliminar el usuario que se esta usando actualmente.");      
                            }else{
-                        result = JOptionPane.showConfirmDialog(null, "¿Esta seguro que desea eliminar el usuario: "+singlyLinkedListUser.getItem(removeU).getUser()+"?","Eliminar usuario",dialog);   
+                        result = JOptionPane.showConfirmDialog(null, "¿Esta seguro que desea eliminar el usuario: "+removeU.getUser()+"?","Eliminar usuario",dialog);   
                         if(result==0){
-                        singlyLinkedListUser.removeIndex(removeU);
+                        hashTableUser.Remove(removeU);
                         jTextPu.setText(" ID");
                         jTextPu2.setText(" Nombre");
                         jTextPu3.setText(" Usuario");
-                        UserL.removeAll();
-                         String [] namep= new  String[singlyLinkedListUser.getSize()];
-                         for(int i=0; i<singlyLinkedListUser.getSize(); i++){
-                          namep[i]=String.valueOf(singlyLinkedListUser.getItem(i).getId());
-                         }
-                         UserL.setListData(namep);
-                          removeU=-1;
+                        
+                            int k=0;
+                           UserL.removeAll();
+                           String [] namep= new  String[hashTableUser.getCurrentSize()];
+                           for (int i = 0; i < hashTableUser.getTheLists().getSize(); i++) {
+                               SinglyLinkedList<User> user= hashTableUser.getTheLists().getItem(i);
+                               for (int j = 0; j < user.getSize(); j++) {
+                                   namep[k]=user.getItem(j).getUser();
+                                   k++;
+                               }
+                           }
+                             UserL.setListData(namep);
+                         
+                         
+                          removeU=null;
                             }
                        }
-                    }else{ if(singlyLinkedListUser.getItem(selected).getUser().equals(singlyLinkedListUser.getItem(indexLA).getUser())){
+                    }else{ 
+                           User usero=new User();
+                           usero.setUser(UserL.getSelectedValue());
+                           
+                           if(UserL.getSelectedValue().equals(userSingIn.getUser())){
                             JOptionPane.showMessageDialog(this,"No es posible eliminar el usuario que se esta usando actualmente.");      
                            }else{
-                        result = JOptionPane.showConfirmDialog(null, "¿Esta seguro que desea eliminar el usuario: "+singlyLinkedListUser.getItem(selected).getUser()+"?","Eliminar usuario",dialog);   
+                        result = JOptionPane.showConfirmDialog(null, "¿Esta seguro que desea eliminar el usuario: "+UserL.getSelectedValue()+"?","Eliminar usuario",dialog);   
                         if(result==0){
-                         singlyLinkedListUser.removeIndex(selected);
-                         jTextPu.setText(" ID");
+                        hashTableUser.Remove(usero);
+                        jTextPu.setText(" ID");
                         jTextPu2.setText(" Nombre");
                         jTextPu3.setText(" Usuario");
-                            UserL.removeAll();
-                         String [] namep= new  String[singlyLinkedListUser.getSize()];
-                         for(int i=0; i<singlyLinkedListUser.getSize(); i++){
-                          namep[i]=String.valueOf(singlyLinkedListUser.getItem(i).getId());
-                         }
-                         UserL.setListData(namep);
+                           
+                        int k=0;
+                           UserL.removeAll();
+                           String [] namep= new  String[hashTableUser.getCurrentSize()];
+                           for (int i = 0; i < hashTableUser.getTheLists().getSize(); i++) {
+                               SinglyLinkedList<User> user= hashTableUser.getTheLists().getItem(i);
+                               for (int j = 0; j < user.getSize(); j++) {
+                                   namep[k]=user.getItem(j).getUser();
+                                   k++;
+                               }
+                           }
+                             UserL.setListData(namep);
+                         
                         }
                         }
                      }
@@ -5224,23 +5314,28 @@ private static int indexCr=1;
         Menu.repaint();
         Menu.revalidate();
     }//GEN-LAST:event_goBackButton9MouseClicked
-      private static int indexLA;
+      private static User userSingIn;
     private void userLogoLabelMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_userLogoLabelMouseClicked
         if(adm){
             try{
 //             jpCM.setVisible(false);
 //             jpUser.setVisible(false);
-                indexLA2=indexLA;
-                jTextIDU.setText("ID");
+                indexLA2=userSingIn;
+                jTextIDU.setText("Usuario");
                 jTextIDP.setText("ID");
-                jTextPu.setText(" "+String.valueOf(singlyLinkedListUser.getItem(indexLA).getId()));
-                jTextPu2.setText(" "+singlyLinkedListUser.getItem(indexLA).getName());
+                jTextPu.setText(" "+String.valueOf(userSingIn.getId()));
+                jTextPu2.setText(" "+userSingIn.getName());
                 jTextPu3.setText(" "+userLabel1.getText());
                
-                 UserL.removeAll();
-                String [] namep= new  String[singlyLinkedListUser.getSize()];
-                for (int i = 0; i < singlyLinkedListUser.getSize(); i++) {
-                namep[i]=String.valueOf(singlyLinkedListUser.getItem(i).getId());
+                int k=0;
+                UserL.removeAll();
+                String [] namep= new  String[hashTableUser.getCurrentSize()];
+                for (int i = 0; i < hashTableUser.getTheLists().getSize(); i++) {
+                    SinglyLinkedList<User> user= hashTableUser.getTheLists().getItem(i);
+                    for (int j = 0; j < user.getSize(); j++) {
+                        namep[k]=user.getItem(j).getUser();
+                        k++;
+                    }
                 }
                 UserL.setListData(namep);
                 
@@ -5270,17 +5365,21 @@ private static int indexCr=1;
     private void UserLMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_UserLMouseClicked
        try{
             int selected =UserL.getSelectedIndex();
-             if(selected!=-1 && singlyLinkedListUser.getSize()>0){
-                 if(selected==0 && removeU!=-1){
-                  jTextPu.setText(" "+String.valueOf(singlyLinkedListUser.getItem(removeU).getId()));
-                  jTextPu2.setText(" "+singlyLinkedListUser.getItem(removeU).getName());
-                  jTextPu3.setText(" "+singlyLinkedListUser.getItem(removeU).getUser()); 
+             if(selected!=-1 && hashTableUser.getCurrentSize()>0){
+                  User usero=new User();
+                  usero.setUser(UserL.getSelectedValue());
+                 if(selected==0 && removeU!=null){
+                  jTextPu.setText(" "+String.valueOf(removeU.getId()));
+                  jTextPu2.setText(" "+removeU.getName());
+                  jTextPu3.setText(" "+removeU.getUser()); 
                   indexLA2=removeU;
                  }else{
-                  jTextPu.setText(" "+String.valueOf(singlyLinkedListUser.getItem(selected).getId()));
-                  jTextPu2.setText(" "+singlyLinkedListUser.getItem(selected).getName());
-                  jTextPu3.setText(" "+singlyLinkedListUser.getItem(selected).getUser());
-                  indexLA2=selected;
+                  usero=hashTableUser.Get(usero);
+                     
+                  jTextPu.setText(" "+String.valueOf(usero.getId()));
+                  jTextPu2.setText(" "+usero.getName());
+                  jTextPu3.setText(" "+usero.getUser());
+                  indexLA2=usero;
                  }
              }
        }catch(Exception e){
@@ -5324,65 +5423,65 @@ private static int indexCr=1;
         //Production aux=myArrayListProduction.getItem(produccion); 
         int currentStage = myArrayListProduction.getItem(produccion).getCurrentStage();
         int stagemax = myArrayListProduction.getItem(produccion).getStages().getSize();
-        if(myArrayListProduction.getItem(produccion).isActive()){
+        
+        
+        if(myArrayListProduction.getItem(produccion).isActive()&&!myArrayListProduction.getItem(produccion).isFinished()){
             if(myArrayListProduction.getItem(produccion).getCurrentStage()<currentmax||!myArrayListProduction.getItem(produccion).getStages().getItem(currentStage-1).isActive()){
-            if (!myArrayListProduction.getItem(produccion).getStages().getItem(currentStage-1).isActive()){
-//                myArrayListProduction.getItem(produccion).getStages().getItem(currentStage-1).setIsActive(true);
-//                myArrayListProduction.getItem(produccion).getStages().getItem(currentStage-1).setIsFinished(false);
-                myArrayListProduction.getItem(produccion).startCurrentStage();
-            
-           
-          
+                if (!myArrayListProduction.getItem(produccion).getStages().getItem(currentStage-1).isActive()){
+//                  myArrayListProduction.getItem(produccion).getStages().getItem(currentStage-1).setIsActive(true);
+//                  myArrayListProduction.getItem(produccion).getStages().getItem(currentStage-1).setIsFinished(false);
+                    myArrayListProduction.getItem(produccion).startCurrentStage();
             //aux.getStages().getItem(currentStage-1).setIsFinished(true);
             //aux.setCurrentStage(currentStage+1);
-            
-            createPanels(myArrayListProduction.getItem(produccion).getStages());
+                    createPanels(myArrayListProduction.getItem(produccion).getStages());
             //myArrayListProduction.add(produccion, aux); 
-            jPanel1.repaint();
-            jpManagementP.repaint();
+                    jPanel1.repaint();
+                    jpManagementP.repaint();
                 
                 JOptionPane.showMessageDialog(this, "La etapa ha inicido");
-            }else{
-                if(myArrayListProduction.getItem(produccion).getStages().getItem(currentStage-1).isActive()){
-                     cerrarEtapa=false;
-                     avanzarEtapa=true;
-                jpManagementP.setVisible(false);
-                jpSetParametr.setVisible(true);
-                //doneButton8.setEnabled(false);
-                createLabel19.setText(myArrayListProduction.getItem(produccion).getStages().getItem(currentStage-1).getParameterList().getItem(0).getName());
-                String li = String.valueOf(myArrayListProduction.getItem(produccion).getStages().getItem(currentStage-1).getParameterList().getItem(0).getLowerLimit());
-                createLabel28.setText(li);
-                String lo = String.valueOf(myArrayListProduction.getItem(produccion).getStages().getItem(currentStage-1).getParameterList().getItem(0).getUpperLimit());
-                createLabel26.setText(lo);
-                UserL1.removeAll();
-                String [] namep= new  String[myArrayListProduction.getItem(produccion).getStages().getItem(currentStage-1).getParameterList().getSize()];
-                for (int i = 0; i < myArrayListProduction.getItem(produccion).getStages().getItem(currentStage-1).getParameterList().getSize(); i++) {
-                namep[i]=myArrayListProduction.getItem(produccion).getStages().getItem(currentStage-1).getParameterList().getItem(i).getName();
-                }
-                 UserL1.setListData(namep);
-                jTextIDU1.setEnabled(true);
-                //aux.getStages().getItem(currentStage-1).setIsFinished(true);
-                //aux.setCurrentStage(currentStage+1);
-                //myArrayListProduction.add(produccion, aux);
-                createPanels(myArrayListProduction.getItem(produccion).getStages());
-            
-                jPanel1.repaint();
-                jpManagementP.repaint();  
+                }else{
+                    if(myArrayListProduction.getItem(produccion).getStages().getItem(currentStage-1).isActive()){
+                        cerrarEtapa=false;
+                        avanzarEtapa=true;
+                        jpManagementP.setVisible(false);
+                        jpSetParametr.setVisible(true);
+                        //doneButton8.setEnabled(false);
+                        createLabel19.setText(myArrayListProduction.getItem(produccion).getStages().getItem(currentStage-1).getParameterList().getItem(0).getName());
+                        String li = String.valueOf(myArrayListProduction.getItem(produccion).getStages().getItem(currentStage-1).getParameterList().getItem(0).getLowerLimit());
+                        createLabel28.setText(li);
+                        String lo = String.valueOf(myArrayListProduction.getItem(produccion).getStages().getItem(currentStage-1).getParameterList().getItem(0).getUpperLimit());
+                        createLabel26.setText(lo);
+                        UserL1.removeAll();
+                        String [] namep= new  String[myArrayListProduction.getItem(produccion).getStages().getItem(currentStage-1).getParameterList().getSize()];
                     
-//             
-              //JOptionPane.showMessageDialog(this, "La etapa ha finalizado y ha activado la siguiente etapa ");  
-               }else{
-                JOptionPane.showMessageDialog(this, "La etapa ya esta finalizada");
-            }}
-        }else{if(myArrayListProduction.getItem(produccion).isFinished())
-                JOptionPane.showMessageDialog(this, "La produccion ya finalizo");else JOptionPane.showMessageDialog(this, "Se encuentra en la ultima etapa");}
+                        for (int i = 0; i < myArrayListProduction.getItem(produccion).getStages().getItem(currentStage-1).getParameterList().getSize(); i++) {
+
+                            namep[i]=myArrayListProduction.getItem(produccion).getStages().getItem(currentStage-1).getParameterList().getItem(i).getName();
+                        }
+                        UserL1.setListData(namep);
+                        jTextIDU1.setEnabled(true);
+                       //aux.getStages().getItem(currentStage-1).setIsFinished(true);
+                       //aux.setCurrentStage(currentStage+1);
+                       //myArrayListProduction.add(produccion, aux);
+                        createPanels(myArrayListProduction.getItem(produccion).getStages());
+                        jPanel1.repaint();
+                        jpManagementP.repaint();
+                        //JOptionPane.showMessageDialog(this, "La etapa ha finalizado y ha activado la siguiente etapa ");  
+                    }else{
+                        JOptionPane.showMessageDialog(this, "La etapa ya esta finalizada");
+                    }
+                }
+            }else{
+                if(myArrayListProduction.getItem(produccion).isFinished())
+                    JOptionPane.showMessageDialog(this, "La produccion ya finalizo");else JOptionPane.showMessageDialog(this, "Se encuentra en la ultima etapa");}
         }
-        else 
-            JOptionPane.showMessageDialog(this, "La produccion no esta activa");
+        else {if(myArrayListProduction.getItem(produccion).isFinished())
+                    JOptionPane.showMessageDialog(this, "La produccion ya finalizo");else JOptionPane.showMessageDialog(this, "La produccion no esta activa");
+            }
         //myArrayListProduction.add(produccion, aux);
-        createPanels(myArrayListProduction.getItem(produccion).getStages());
-        jPanel1.repaint();
-        jpManagementP.repaint();
+            createPanels(myArrayListProduction.getItem(produccion).getStages());
+            jPanel1.repaint();
+            jpManagementP.repaint();
     }//GEN-LAST:event_doneButton5MouseClicked
         int contador=-1;
     private void doneButton6MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_doneButton6MouseClicked
@@ -5413,9 +5512,6 @@ private static int indexCr=1;
                 namep[i]=myArrayListProduction.getItem(produccion).getStages().getItem(currentStage-1).getParameterList().getItem(i).getName();
                 }
                  UserL1.setListData(namep);
-            
-            
-            
             
             jTextIDU1.setEnabled(true);
             //aux.getStages().getItem(currentStage-1).setIsFinished(true);
@@ -5467,7 +5563,7 @@ boolean avanzarEtapa=false;
         int produccion=sLIDP2.getItem(selectproduction+(5*(indexSpp-1)));
         //Production aux=myArrayListProduction.getItem(produccion);
         int currentStage = myArrayListProduction.getItem(produccion).getCurrentStage();
-        
+        int currentmax=myArrayListProduction.getItem(produccion).getStages().getSize();
         //doneButton8.setEnabled(false);
         double valuep1=0;
         boolean correct= true;
@@ -5480,38 +5576,88 @@ boolean avanzarEtapa=false;
                }
         if (contador<myArrayListProduction.getItem(produccion).getStages().getItem(currentStage-1).getParameterList().getSize()){
             //doneButton8.setEnabled(false);
-        if (correct){
-        myArrayListProduction.getItem(produccion).getStages().getItem(currentStage-1).setParameters(valuep1, contador);
-        if(myArrayListProduction.getItem(produccion).getStages().getItem(currentStage-1).getParameterList().getItem(contador).satisfyQuality()) {
-            JOptionPane.showMessageDialog(this,"El parametro satisface calidad");
-            jTextIDU1.setText("valor");
-            contador++;
-            if(contador<myArrayListProduction.getItem(produccion).getStages().getItem(currentStage-1).getParameterList().getSize()){
-            createLabel19.setText(myArrayListProduction.getItem(produccion).getStages().getItem(currentStage-1).getParameterList().getItem(contador).getName());
-            String li = String.valueOf(myArrayListProduction.getItem(produccion).getStages().getItem(currentStage-1).getParameterList().getItem(contador).getLowerLimit());
-            createLabel28.setText(li);
-            String lo = String.valueOf(myArrayListProduction.getItem(produccion).getStages().getItem(currentStage-1).getParameterList().getItem(contador).getUpperLimit());
-            createLabel26.setText(lo);
+            if (correct){
+                myArrayListProduction.getItem(produccion).getStages().getItem(currentStage-1).setParameters(valuep1, contador);
+                if(myArrayListProduction.getItem(produccion).getStages().getItem(currentStage-1).getParameterList().getItem(contador).satisfyQuality()) {
+                    JOptionPane.showMessageDialog(this,"El parametro satisface calidad");
+                    jTextIDU1.setText("valor");
+                    contador++;
+                    
+                    if(contador<myArrayListProduction.getItem(produccion).getStages().getItem(currentStage-1).getParameterList().getSize()){
+                        createLabel19.setText(myArrayListProduction.getItem(produccion).getStages().getItem(currentStage-1).getParameterList().getItem(contador).getName());
+                        String li = String.valueOf(myArrayListProduction.getItem(produccion).getStages().getItem(currentStage-1).getParameterList().getItem(contador).getLowerLimit());
+                        createLabel28.setText(li);
+                        String lo = String.valueOf(myArrayListProduction.getItem(produccion).getStages().getItem(currentStage-1).getParameterList().getItem(contador).getUpperLimit());
+                        createLabel26.setText(lo);
+                    }else{    //int produccion=sLIDP2.getItem(selectproduction+(5*(indexSpp-1)));
+        //Production aux=myArrayListProduction.getItem(produccion);
+        //int currentStage = myArrayListProduction.getItem(produccion).getCurrentStage();
+        
+                if(!(contador<myArrayListProduction.getItem(produccion).getStages().getItem(currentStage-1).getParameterList().getSize())){
+//        aux.getStages().getItem(currentStage-1).setIsFinished(true);
+//        aux.setCurrentStage(currentStage+1);
+//        JOptionPane.showMessageDialog(this, "Finalizo la etapa con exito");
+                if(cerrarEtapa&&!avanzarEtapa){
+//        myArrayListProduction.getItem(produccion).getStages().getItem(currentStage-1).setIsFinished(true);
+//              
+//        myArrayListProduction.getItem(produccion).setCurrentStage(currentStage+1);
+                myArrayListProduction.getItem(produccion).endCurrentStage();
+          
+                JOptionPane.showMessageDialog(this, "Finalizo la etapa con exito. Los valores de todos los parametros han sido llenados con exito. Se guardó");
+        if(myArrayListProduction.getItem(produccion).getCurrentStage()==currentmax+1){
+            JOptionPane.showMessageDialog(this, "La produccion esta finalizada");
+            myArrayListProduction.getItem(produccion).finish();
+        
+        }
+        }else if(!cerrarEtapa&&avanzarEtapa){
+             myArrayListProduction.getItem(produccion).endCurrentStage();
+             myArrayListProduction.getItem(produccion).startCurrentStage();
+             JOptionPane.showMessageDialog(this, "Finalizo la etapa con exito. Los valores de todos los parametros han sido llenados con exito. Se guardó");
+             //myArrayListProduction.getItem(produccion).getStages().getItem(currentStage-1).setIsFinished(true);
+             //myArrayListProduction.getItem(produccion).getStages().getItem(currentStage).setIsActive(true);
+             //myArrayListProduction.getItem(produccion).setCurrentStage(currentStage+1);
+             
+        }
+        
+        
+        //myArrayListProduction.add(produccion, aux);
+        
+        createPanels(myArrayListProduction.getItem(produccion).getStages());
+        jpSetParametr.setVisible(false);
+        jpManagementP.setVisible(true);
+        jPanel1.repaint();
+        jpManagementP.repaint();}
+        else {JOptionPane.showMessageDialog(this, "Verificar todos los parametros antes de guardar."); }
             
+            
+            
+                    
+                    
+                    }
+                }else
+                    JOptionPane.showMessageDialog(this,"El parametro no satisface calidad");
             }
-        }else
-            JOptionPane.showMessageDialog(this,"El parametro no satisface calidad");
-            
-        }}else{
+        }else{
             //int produccion=sLIDP2.getItem(selectproduction+(5*(indexSpp-1)));
         //Production aux=myArrayListProduction.getItem(produccion);
         //int currentStage = myArrayListProduction.getItem(produccion).getCurrentStage();
         
-        if(!(contador<myArrayListProduction.getItem(produccion).getStages().getItem(currentStage-1).getParameterList().getSize())){
+                if(!(contador<myArrayListProduction.getItem(produccion).getStages().getItem(currentStage-1).getParameterList().getSize())){
 //        aux.getStages().getItem(currentStage-1).setIsFinished(true);
 //        aux.setCurrentStage(currentStage+1);
 //        JOptionPane.showMessageDialog(this, "Finalizo la etapa con exito");
-        if(cerrarEtapa&&!avanzarEtapa){
+                if(cerrarEtapa&&!avanzarEtapa){
 //        myArrayListProduction.getItem(produccion).getStages().getItem(currentStage-1).setIsFinished(true);
-//        
+//              
 //        myArrayListProduction.getItem(produccion).setCurrentStage(currentStage+1);
-          myArrayListProduction.getItem(produccion).endCurrentStage();
-        JOptionPane.showMessageDialog(this, "Finalizo la etapa con exito");
+                myArrayListProduction.getItem(produccion).endCurrentStage();
+          
+                JOptionPane.showMessageDialog(this, "Finalizo la etapa con exito");
+        if(myArrayListProduction.getItem(produccion).getCurrentStage()==currentmax+1){
+            JOptionPane.showMessageDialog(this, "La produccion esta finalizada");
+            myArrayListProduction.getItem(produccion).finish();
+        
+        }
         }else if(!cerrarEtapa&&avanzarEtapa){
              myArrayListProduction.getItem(produccion).endCurrentStage();
              myArrayListProduction.getItem(produccion).startCurrentStage();
@@ -5529,10 +5675,10 @@ boolean avanzarEtapa=false;
         jpManagementP.setVisible(true);
         jPanel1.repaint();
         jpManagementP.repaint();}
-        else JOptionPane.showMessageDialog(this, "Verificar todos los parametros antes de guardar"); 
+        else {JOptionPane.showMessageDialog(this, "Verificar todos los parametros antes de guardar."); }
             
             
-            JOptionPane.showMessageDialog(this,"Los valores de todos los parametros han sido llenados con exito. Se guardó");
+            JOptionPane.showMessageDialog(this,"");
             //doneButton8.setEnabled(true);
         
         }
@@ -5552,15 +5698,29 @@ boolean avanzarEtapa=false;
         try{
             String prodName = ProductionSearchList.getSelectedValue().toString();
             if(prodName==""){
+                
+                
             }else{
             sLIDP = new SinglyLinkedList<>();
-            for(int i=0; i<myArrayListProduction.getSize(); i++){
-                if(myArrayListProduction.getItem(i).getName().equalsIgnoreCase(prodName)){
+            int tipr=1;
+            if(treeList!=null){
+                for(int i=0; i<treeList.getSize(); i++){
+                if(treeList.getItem(i).getName().equalsIgnoreCase(prodName)){
                   sLIDP.pushBack(i);
                 }                
+                 }
+                tipr=-1;
+            }else{
+                for(int i=0; i<myArrayListProduction.getSize(); i++){
+                 if(myArrayListProduction.getItem(i).getName().equalsIgnoreCase(prodName)){
+                  sLIDP.pushBack(i);
+                 }                
+                }
+                tipr=1;
             }
+            
             if(sLIDP.getSize()==0){
-                   JOptionPane.showMessageDialog(this,"No se ha encontrado una producción con el nombre: "+jTextCr.getText());    
+                  // JOptionPane.showMessageDialog(this,"No se ha encontrado una producción con el nombre: "+jTextCr.getText());    
                    nRdeP.setText("de "+sLIDP.getSize());
                    nRdeP0.setText("0");
                    resgisterF.setText("");
@@ -5568,7 +5728,7 @@ boolean avanzarEtapa=false;
                 indexCr=1;
                 nRdeP.setText("de "+sLIDP.getSize());
                 nRdeP0.setText("1");
-                printProduction(1);
+                printProduction(tipr);
                 
             }
               }
@@ -5576,24 +5736,25 @@ boolean avanzarEtapa=false;
                JOptionPane.showMessageDialog(this,"Ha ocurrido un error, por favor contacte con el administrador.");         
                     }
     }//GEN-LAST:event_ProductionSearchListMouseClicked
-
+  private MyArrayList<Production> treeList;
     private void jTextCrKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jTextCrKeyTyped
         
         //try{
         String currentSearch = jTextCr.getText();
         if(myArrayListProduction.getSize()>0){
             
-            AvlNodeTree<Production> prodTree = new AvlNodeTree<>();
+            //AvlNodeTree<Production> prodTree = new AvlNodeTree<>();
             ProductionSearchList.removeAll();
-            String [] namep= new  String[10];            
+            String [] namep= new  String[9];            
            
-            for(int i=0; i<myArrayListProduction.getSize(); i++){
-                prodTree.insert(myArrayListProduction.getItem(i));
-            }
+//            for(int i=0; i<myArrayListProduction.getSize(); i++){
+//                prodTree.insert(myArrayListProduction.getItem(i));
+//            }
             
             Production aux = new Production(currentSearch, "", null, null);
             AvlNode node = prodTree.find(aux); 
-            MyArrayList<Production> treeList = new MyArrayList();
+            //MyArrayList<Production> treeList = new MyArrayList();
+            treeList = new MyArrayList();
             Production auxProd = (Production) node.getItem();             
             int stringIndex = currentSearch.length();
             
@@ -5604,18 +5765,28 @@ boolean avanzarEtapa=false;
                 node = node.next(node);
                 auxProd = (Production) node.getItem(); 
                 
-                for(int i=0; i<10;i++){
-                   if(auxProd.getName().substring(0, currentSearch.length()).compareToIgnoreCase(currentSearch) == 0) {
-                   treeList.pushBack((Production)node.getItem()); 
-                   node = node.next(node);
-                   auxProd = (Production) node.getItem();  
-                }}
+                for(int i=0; i<9;i++){
+                    if(auxProd.getName().length()>=currentSearch.length()){
+                         if(auxProd.getName().substring(0, currentSearch.length()).compareToIgnoreCase(currentSearch) == 0) {
+                                if(!treeList.isListed((Production)node.getItem())){
+                                  treeList.pushBack((Production)node.getItem()); 
+                                    node = node.next(node);
+                                    auxProd = (Production) node.getItem();   
+                                }
+                    }
+                   
+                }else{
+                      //  System.out.println("Tamaño de auxP="+auxProd.getName().length()+" Tamaño de currentS= "+currentSearch.length());
+                    }
+                    
+                }
                 
             }
 
             MyArrayList<Production> completeList = prodTree.inOrderList();
 
             if (currentSearch.isBlank()){
+                treeList = null;
                 ProductionSearchList.setListData(namep);
                 for(int i=0; i<completeList.getSize(); i++){
                     namep[i]=completeList.getItem(i).getName();  
@@ -5634,6 +5805,147 @@ boolean avanzarEtapa=false;
                 
                  
     }//GEN-LAST:event_jTextCrKeyTyped
+
+    private void jTextCp1KeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jTextCp1KeyTyped
+        IDP.setText(jTextCp1.getText());
+    }//GEN-LAST:event_jTextCp1KeyTyped
+
+    private void jTextSp1KeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jTextSp1KeyTyped
+       //try{
+        String currentSearch = jTextSp1.getText();
+        if(myArrayListProduction.getSize()>0){
+            
+            //AvlNodeTree<Production> prodTree = new AvlNodeTree<>();
+            ProductionLSp.removeAll();
+            String [] namep= new  String[5];            
+           
+//            for(int i=0; i<myArrayListProduction.getSize(); i++){
+//                prodTree.insert(myArrayListProduction.getItem(i));
+//            }
+            
+            Production aux = new Production(currentSearch, "", null, null);
+            AvlNode node = prodTree.find(aux); 
+            MyArrayList<Production> treeList2 = new MyArrayList();
+            //treeList = new MyArrayList();
+            Production auxProd = (Production) node.getItem();             
+            int stringIndex = currentSearch.length();
+            
+            if (stringIndex <= auxProd.getName().length() && stringIndex > 0) {
+                if (auxProd.getName().substring(0, stringIndex).compareToIgnoreCase(currentSearch) == 0) {
+                    treeList2.pushBack((Production)node.getItem()); 
+                }                    
+                node = node.next(node);
+                auxProd = (Production) node.getItem(); 
+                
+                for(int i=0; i<5;i++){
+                    if(auxProd.getName().length()>=currentSearch.length()){
+                         if(auxProd.getName().substring(0, currentSearch.length()).compareToIgnoreCase(currentSearch) == 0) {
+                                if(!treeList2.isListed((Production)node.getItem())){
+                                  treeList2.pushBack((Production)node.getItem()); 
+                                    node = node.next(node);
+                                    auxProd = (Production) node.getItem();   
+                                }
+                    }
+                   
+                }else{
+                      //  System.out.println("Tamaño de auxP="+auxProd.getName().length()+" Tamaño de currentS= "+currentSearch.length());
+                    }
+                    
+                }
+                
+            }
+
+            //MyArrayList<Production> completeList = prodTree.inOrderList();
+                   sLIDP2 = new SinglyLinkedList<>();
+            if (currentSearch.isBlank()){
+                 //ProductionLSp.setListData(namep);
+//                for(int i=0; i<completeList.getSize(); i++){
+//                    namep[i]=completeList.getItem(i).getName();  
+//                }
+                 
+            if(myArrayListProduction.getSize()>0){
+               // ProductionLSp.removeAll();
+                //String [] namep= new  String[5];
+                for(int i=0; i<myArrayListProduction.getSize(); i++){
+                        sLIDP2.pushBack(i);
+                }
+                for(int i=0; i<5; i++){
+                    if(i<myArrayListProduction.getSize()){
+                        namep[i]=myArrayListProduction.getItem(i).getName();
+                   if(!myArrayListProduction.getItem(i).isIsActive()){
+                        iconSeeP(i+1);
+                   }else if(myArrayListProduction.getItem(i).isIsFinished()){
+                        iconSeeP((i+1)+5);
+                   }else if(myArrayListProduction.getItem(i).isIsActive()){
+                        iconSeeP((i+1)+10);
+                   }
+                    }else{
+                        iconSeeP((i+1)+15);
+                    }
+                   
+                }
+                
+                  // ProductionLSp.setListData(namep);
+                 indexSpp=1;
+                 String auxS;
+                 int sizep=myArrayListProduction.getSize()%5;
+                 int aux2=myArrayListProduction.getSize()/5;
+                if(sizep!=0){
+                    aux2++;
+                }
+                 nSdeP.setText("de "+aux2);
+                 nSdeP0.setText("1");
+                 namePjL.setText("");
+                 namePjL0.setText("Todos las producciónes");
+            }
+                    
+                
+            } else {
+//                for(int i=0; i<treeList2.getSize(); i++){
+//                    namep[i]=treeList2.getItem(i).getName();                                  
+//                }
+//                
+                //
+                
+                for(int i=0; i<treeList2.getSize(); i++){
+                   sLIDP2.pushBack(myArrayListProduction.getIndex(treeList2.getItem(i)));
+                }
+                
+                for(int i=0; i<5; i++){
+                    if(i<treeList2.getSize()){
+                        namep[i]=treeList2.getItem(i).getName();
+                   if(!treeList2.getItem(i).isIsActive()){
+                        iconSeeP(i+1);
+                   }else if(treeList2.getItem(i).isIsFinished()){
+                        iconSeeP((i+1)+5);
+                   }else if(treeList2.getItem(i).isIsActive()){
+                        iconSeeP((i+1)+10);
+                   }
+                    }else{
+                        iconSeeP((i+1)+15);
+                    }
+                   
+                }
+                
+                indexSpp=1;
+                 String auxS;
+                 int sizep=treeList2.getSize()%5;
+                 int aux2=treeList2.getSize()/5;
+                if(sizep!=0){
+                    aux2++;
+                }
+                 nSdeP.setText("de "+aux2);
+                 nSdeP0.setText("1");
+                 namePjL.setText("");
+                 namePjL0.setText(currentSearch);
+                //
+                
+            }
+            ProductionLSp.setListData(namep);
+        }     
+//    }catch (Exception e){
+//                JOptionPane.showMessageDialog(this,"Ha ocurrido un error, por favor contacte con el administrador.");
+    }//GEN-LAST:event_jTextSp1KeyTyped
     
     private void createPanels(MyArrayList<Stage> stages1){
         

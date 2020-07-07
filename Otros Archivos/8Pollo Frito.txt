@@ -1,0 +1,13 @@
+1.Nombre: Pollo Frito;
+8;
+0;
+0;
+No iniciado;
+1/1/2020;
+0;
+2.Descripcion;
+Descripción;
+3.Materiales;
+9$leche;1/1/2020;1/2/2021;123;Descripción*Nombre de parametro;-1.0;1.0;1.0;
+4.Stage;
+16$Convertir en queso;.;-;-;Descripción;1;0;0*Porcentaje de elementos externos;-1.0;0.0;4.0*Nivel de cuajado  en procentaje;-1.0;40.0;50.0;

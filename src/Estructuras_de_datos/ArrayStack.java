@@ -36,8 +36,8 @@ public class ArrayStack<T> implements Serializable {
         if (empty()) {
             throw new RuntimeException("Nothing to stack, the stack is empty.");
         } else {
-            T item = sarray[top];
-            sarray[top] = null;
+            T item = sarray[top-1];
+            sarray[top-1] = null;
             top--;
             return item;
         }

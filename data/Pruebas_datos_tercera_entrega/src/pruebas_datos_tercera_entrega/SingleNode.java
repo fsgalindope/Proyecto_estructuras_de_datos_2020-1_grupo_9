@@ -1,4 +1,4 @@
-package Estructuras_de_datos;
+package pruebas_datos_tercera_entrega;
 
 import java.io.Serializable;
 

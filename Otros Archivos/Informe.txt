@@ -1,0 +1,6 @@
+1Papas fritas;
+2Papas Fritas de Pollo;
+3Nombre de la producción;
+4Queso ;
+8Pollo Frito;
+6Papel;
